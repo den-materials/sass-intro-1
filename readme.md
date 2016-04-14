@@ -1,4 +1,5 @@
 # Sass - Basic Reuse
+<link href="ga_wdi_markdown.css" media="all" rel="stylesheet">
 
 ## Learning Objectives
 
@@ -119,17 +120,22 @@ Timings:
 
 Let's stay right here and play with colors.
 
-Q. How many colors do you see on this page?
----
+<details class="qa">
+  <summary class="question">
+    **Q**. How many colors do you see on this page?
+  </summary>
+  <blockquote class="answer">
+  I see five:
 
-> A.
-I see five:
-- font color
-- first character
-  - background-color
-  - border-color
-  - box-shadow
-- background
+  - font color
+  - first character
+    - background-color
+    - border-color
+    - box-shadow
+  - background
+  </blockquote>
+</details>
+
 
 But... they are all based off of just 2 colors.  The primary color is Cerulean Blue (#2A52BE, my favorite color).  The secondary color is "Jesse" Green (#bada55).
 
@@ -159,10 +165,16 @@ As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
 }
 ```
 
-Q. What does that css do?
----
+<details class="qa">
+  <summary class="question">
+    **Q.** What does that css do?
+  </summary>
+  <blockquote class="answer">
+    **A.** It styles nav elements.  Wouldn't it be nice if you could "group" it together?
+  </blockquote>
+</details>
 
-> A. Student responses.
+
 
 
 ### The & selector (10 min)
@@ -183,12 +195,18 @@ Copy this scss into precess.co.
 }
 ```
 
-> Q: What happened?  How can we use this?
-
----
+<details class="qa">
+  <summary class="question">
+    **Q.** What happened?  How can we use this?
+  </summary>
+  <blockquote class="answer">
+**A.** It generated the same css we had before, but this is easier to reason about.
 
 - Remove duplication.  
 - Group similar rules together.  
+
+  </blockquote>
+</details>
 
 An ecosystem that encourages best practices?  I love that.
 
@@ -218,24 +236,35 @@ body::after{
 ```
 
 ### Comments
+
 While we're here, make note of those comments.  Some are in the compiled CSS.  Some are not.
+
+[Let's check out the docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments)
 
 - CSS Style Comments remain (`/* comment */`).
 - Single line comments do not (`// comment`)
 
 
-[Docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments)
+<details class="qa">
+  <summary class="question">
+    **Q.** Why would we want that?
+  </summary>
+  <blockquote class="answer">
+**A.** Sometimes we want a comment for the builders/writers of the css/sass.  Sometimes we want a comment for those using our css.
+  </blockquote>
+</details>
 
-Q. Why would we want that?
----
-
-> A. See the example.
-
+Note the ability to interpolate in the comment.
 
 ## Exercise: Flash (15 min)
 
-* [Starter](http://codepen.io/adambray/pen/bEgMXr)
-* [Solution](http://codepen.io/adambray/pen/yegjdj)
+[Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
+<details>
+  <summary>
+	Hint
+  </summary>
+  [Solution](http://codepen.io/adambray/pen/yegjdj)
+</details>
 
 ## Conclusion
 
