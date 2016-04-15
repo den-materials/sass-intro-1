@@ -127,8 +127,8 @@ background-color: $colorPrimary;
 
 ### Exercise: Variables & Colors (30 min)
 
-Use variables to signify intent. 
- 
+Use variables to signify intent.
+
 - Extract some values in your css to variables.  Choose helpful names.  
 - Identify duplication and things that vary frequently.  Think about what you changed a few times as you were building this.  What are you likely to change in the future?  Turn these into "vary"ables.  
 - Put them at the top of your script, so that you can use them to configure your "page".
@@ -294,6 +294,8 @@ Note the ability to interpolate in the comment.
 - How do `@mixin` and `@include` work together to make css more managable?
 - Name 3 benefits of Sass.
 
+Want more?  Check out the follow-up lesson, [Sass Directives](https://github.com/ga-wdi-lessons/sass-directives)
+
 
 ## References
 
@@ -301,6 +303,7 @@ Note the ability to interpolate in the comment.
 - [3D Buttons with Sass](https://jesse.sh/makes-3d-buttons-with-sass/)
 - [WDI5](https://github.com/ga-dc/milk-and-cookies/tree/master/w10/d01_sass)
 - http://precess.co
+- Github's Style Guide, [Primer CSS](http://primercss.io/about/)
 - Colors
   - http://sass-lang.com/documentation/Sass/Script/Functions.html
   - https://robots.thoughtbot.com/controlling-color-with-sass-color-functions
