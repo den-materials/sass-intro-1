@@ -1,5 +1,4 @@
 # Sass - Basic Reuse
-<link href="ga_wdi_markdown.css" media="all" rel="stylesheet">
 
 ## Learning Objectives
 
@@ -8,7 +7,7 @@
 - Explain what `&` is and why we use it
 - Use @include and @extend to create mixins and inherit from other rules
 
-## What is Sass? (15 min)
+## Framing: What is Sass? (15 min)
 
 ![Sass Icon](http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg)
 ![Sass Glasses](http://sass-lang.com/assets/img/illustrations/glasses-2087d741.svg)
@@ -16,6 +15,7 @@
 ---
 
 ### Some would say Sass is...
+
 ## [Syntactically Awesome Stylesheets](http://codepen.io/mattscilipoti/full/xwKrMR).
 
 > Sass is an extension of CSS that adds power and elegance to the basic language.
@@ -29,7 +29,7 @@
 
 ## The Finished Product
 
-Here are a few examples of Jesse playing with CSS/Sass.  Let's look at the css that is required to produce this effect.  Then, compare that to the Sass we used to generate the css.
+Here are a few examples of Jesse playing with CSS/Sass.  Let's look at the css that is required to produce this effect.  Then, compare that to the Sass we used to generate the css (by clicking "View Compiled").
 
 - [BAMSAY](http://codepen.io/jshawl/pen/cLJal)
 - [Boxes](http://codepen.io/jshawl/pen/nHDLz)
@@ -37,6 +37,10 @@ Here are a few examples of Jesse playing with CSS/Sass.  Let's look at the css t
 - [A Button](http://codepen.io/jshawl/pen/bcjyH)
 - [Forest](http://codepen.io/jshawl/pen/cJjIm)
 - [Space Invader](http://codepen.io/jshawl/pen/cnyrJ)
+
+### Bonus
+
+Whenever you are looking for something to do, come back and analyze these examples.  How did we create that Space Invader?  You'd be surprised.  I was.
 
 ### Exercise: Syntastically Awesome Stylesheets (35 min)
 
@@ -47,9 +51,18 @@ You task is to [make this](http://codepen.io/mattscilipoti/full/xwKrMR).  Have f
 - Step 3: Add some html.  Add some css.  Iterate.
 - Step 4: Look for things that might benefit from a variable: remove duplication, signify intent, or to make change easier.
 
-Suggestions:
-- Use a [google font](https://www.google.com/fonts).
-- Highlight the first character.  Css has a selector for that.
+<details>
+  <summary>
+    Suggestions
+  </summary>
+  <blockquote class="answer">
+  - Use a [google font](https://www.google.com/fonts).
+  - Highlight the first character.  Css has a selector for that.
+
+  </blockquote>
+</details>
+
+
 
 Timing Expectations:
 - 5 min: Your own CodePen.  We see the phrase.  Identified the components needed and steps to reach your goal. Researching how to highlight the characters.
@@ -61,8 +74,16 @@ Timing Expectations:
 - 15 min:  Shaping up nicely. First letters are highlighted.  Playing with that middle "s".
   - Discuss:
     - All of your first characters should be highlighted.  If not, I recommend you adjust your approach.  Discuss.
-    - How did you highlight?  Specifics.
-      - `::first-letter`.  Breaking "Stylesheets" into two elements. Only "block" elements (including "inline-block").  
+
+    <details class="qa">
+      <summary class="question">
+        **Q.** How did you highlight?  Specifics.
+      </summary>
+      <blockquote class="answer">
+**A.** `::first-letter`.  Breaking "Stylesheets" into two elements. Only "block" elements (including "inline-block").
+      </blockquote>
+    </details>
+
 - 25 min: Fto5 to continue
 - 35 min: Discuss after the break.
 
@@ -106,12 +127,14 @@ background-color: $colorPrimary;
 
 ### Exercise: Variables & Colors (30 min)
 
-Use variables to signify intent.  
+Use variables to signify intent. 
+ 
 - Extract some values in your css to variables.  Choose helpful names.  
 - Identify duplication and things that vary frequently.  Think about what you changed a few times as you were building this.  What are you likely to change in the future?  Turn these into "vary"ables.  
 - Put them at the top of your script, so that you can use them to configure your "page".
 
 Timings:
+
 - 5 min: Status.
   - Discuss [string interpolation](http://webdesign.tutsplus.com/tutorials/all-you-ever-need-to-know-about-sass-interpolation--cms-21375).
 - 15 min: Start discussion: proper naming, usage. Students slack out examples.
@@ -176,12 +199,11 @@ As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
 
 
 
-
 ### The & selector (10 min)
 
-Copy this scss into precess.co.  
-```scss
+Copy this scss into [precess.co](http://precess.co).
 
+```scss
 .nav{
   li{
     display: inline-block;
@@ -214,7 +236,7 @@ An ecosystem that encourages best practices?  I love that.
 
 Remember the clearfix problem from the CSS2 lesson.  We had to write specific css to ensure floats did not effect the next element. Imagine trying to remember that "fix" and typing it in correctly every time you needed it.  Now, you can make a `clearfix` mixin that codifies the rules.  Then, those rules can be included in any CSS rule we want.
 
-Let's look at this in precess.co.
+Let's look at this in [precess.co](http://precess.co).
 
 ```scss
 // Make this in one file
