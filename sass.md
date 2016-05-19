@@ -201,12 +201,12 @@ Properties can also be nested which is helpful to long ones
 ```
 
 
-<details class="qa">
-  <summary class="question">
+<details>
+  <summary>
   Compiles to:
   </summary>
-  <details class="answer">
   <br>
+
   ```css
   /* CSS */
   .card-right {
@@ -216,8 +216,9 @@ Properties can also be nested which is helpful to long ones
     border-bottom-color: #333;
   }
   ```
+
   <br>
-  </details>
+  <br>
 </details>
 
 # Comments
