@@ -12,8 +12,8 @@
 
 Ultimately we are trying to answer the question:
 
->How do we build web applications and sites for an optimal interaction experience on a multitude of devices?
-
+>How do we build web applications and sites for an optimal interaction
+experience on a multitude of devices?
 
 ## You do: Turn and Talk (10 min)
 
@@ -52,7 +52,8 @@ Already covered
 We need images that fit their containers.  
 It turns `max-width: 100%` is the answer.  Most of the time.  For any media.
 
-Even as our flexible container resizes, shrinking or enlarging our image, the image’s aspect ratio remains intact.
+Even as our flexible container resizes, shrinking or enlarging our image, the
+image’s aspect ratio remains intact.
 
 ```css
 img,
@@ -65,14 +66,15 @@ video {
 
 ### Relative units of measurement
 
-So far, we've been working with pixels (absolute unit of measurement) and percentages (relative unit of measurements)
+So far, we've been working with pixels (absolute unit of measurement) and
+percentages (relative unit of measurements)
 
 - em and rem
 - vh and vw
 - vmin and vmax
 - ex and ch
 
-## Media Queries
+## Media Queries (10 min)
 
 
 One way to adjust the styles depending on the device's size is by using media queries:
@@ -89,9 +91,14 @@ body{
 }
 ```
 
-Using media queries, we can group our css rules according to the size of our expected viewing devises.  This media query says, if our viewport is less than 400px, use the following css rules.
+Using media queries, we can group our css rules according to the size of our
+expected viewing devises.  This media query says, if our viewport is less than
+400px, use the following css rules.
 
-The 400px corresponds to the device's viewport.  A device's viewport is different from both its screen size and resolution.  Check out [this article](http://www.quirksmode.org/mobile/viewports.html) if you're interested in why.
+The 400px corresponds to the device's viewport.  A device's viewport is
+different from both its screen size and resolution.  Check out [this
+article](http://www.quirksmode.org/mobile/viewports.html) if you're interested
+in why.
 
 Other possible values include
 
@@ -112,7 +119,7 @@ min-width | max-width | min-height | max-height
 | scan | grid
 ```
 
-## We do: Check it out w/ Chrome dev tools (15 min)
+## Meta name="viewport"
 
 Be sure to include
 
@@ -120,13 +127,19 @@ Be sure to include
 <meta name="viewport" content="width=device-width">
 ```
 
->Mobile Safari introduced the "viewport meta tag" to let web developers control the viewport's size and scale. Many other mobile browsers now support this tag, although it is not part of any web standard.  This setting makes the width of the browser’s viewport equal to the width of the device’s screen.
+>Mobile Safari introduced the "viewport meta tag" to let web developers control
+the viewport's size and scale. Many other mobile browsers now support this tag,
+although it is not part of any web standard.  This setting makes the width of
+the browser’s viewport equal to the width of the device’s screen.
 
 ## You do: Media Queries (15 min)
 
 ### Step 1
 
-Working with the example above, create a [jsfiddle](https://jsfiddle.net/), [codepen](http://codepen.io/pen/), or [webpage](http://justinjackson.ca/words.html) that includes at least two media queries.
+Working with the example above, create a [jsfiddle](https://jsfiddle.net/),
+[codepen](http://codepen.io/pen/), or
+[webpage](http://justinjackson.ca/words.html) that includes at least two media
+queries.
 
 When the viewport is less than 800px wide, make the background yellow. When the viewport is less
 than 400px wide, make the background green.
@@ -137,7 +150,8 @@ than 400px wide, make the background green.
 
 Try out a few of the properties above. You can combine media queries to get several different results.
 
-i.e. what combination of media queries could produce the following grid as the viewport [changes size](http://maximin.tv/srm/)?
+i.e. what combination of media queries could produce the following grid as the
+viewport [changes size](http://maximin.tv/srm/)?
 
 | green     | yellow | red    |
 |:----------|:-------|:-------|
@@ -150,18 +164,9 @@ i.e. what combination of media queries could produce the following grid as the v
 
 ## Break (10 min)
 
-
-
 ## You do: Convert the "Craigslist Grid" (15 min)
 
 https://github.com/ga-dc/craigslist_grid
-
-## Break (10 min)
-
-## You do: 007 Exercise (20 min)
-
-https://github.com/ga-dc/responsive_007
-
 
 ## Cheatsheet:
 

@@ -31,3 +31,11 @@ Sass Bonus
   - conditionals
   - loops
   - functions
+
+4k 2560
+laptopL 1440
+laptop 1024
+tablet 768
+mobileL 425
+mobileM 375
+mobileS 325
