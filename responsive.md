@@ -3,19 +3,17 @@
 ## Learning Objectives
 
 - Explain the difference between a responsive website and a mobile-specific website.
-- Compare mobile-first to desktop-first responsive design
 - Use media queries to adjust styles for different viewport sizes.
 - Identify and use relative units like `em`, `rem`, `vh`, `vw`, etc..
 
-
-## Opening (5 min)
+# Opening
 
 Ultimately we are trying to answer the question:
 
 >How do we build web applications and sites for an optimal interaction
 experience on a multitude of devices?
 
-## You do: Turn and Talk (10 min)
+## You do: Turn and Talk (10 min / 10)
 
 What makes a design fixed? What makes a design fluid? What makes a site responsive?
 
@@ -25,7 +23,7 @@ Check out [mediaqueri.es](http://mediaqueri.es) for inspiration.
 
 You tell me! http://screensiz.es
 
-## Mobile Specific Sites (5 min)
+## Mobile Specific Sites (5 min / 15)
 
 One way to create optimal experiences for mobile users is a dedicated mobile site.
 
@@ -37,7 +35,7 @@ Compare https://m.ups.com with https://ups.com
 
 Avoid these... please.
 
-## The Three Components of Responsive Web Design (10 min)
+# The Three Components of Responsive Web Design (10 min / 25)
 
 1. Flexible (or Fluid) Grids
 1. Flexible Images (or Media)
@@ -45,7 +43,89 @@ Avoid these... please.
 
 ## Flexible Grids
 
-Already covered
+Already covered in [grids lesson](https://github.com/ga-wdi-lessons/css-grids)
+
+<details>
+  <summary>
+	Refresher:
+  </summary>
+  <br>
+  ```css
+  .row, .column {
+    /* By default, box-sizing is set to content-box */
+    box-sizing: border-box;
+  }
+
+  .row {
+    /* Let's add a border so we can see our rows better */
+    border: 2px solid rebeccapurple;
+  }
+
+  /* Clear fix*/
+  .row:before, .row:after {
+    content: "";
+    display: table;
+  }
+
+  .row:after {
+    clear: both;
+  }
+
+  .column {
+    /* Let's add another border so we can see our columns better */
+    position: relative;
+    border: 2px solid tomato;
+    float: left;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .column .column {
+    border: 2px solid springgreen;
+  }
+
+  .header > .column,
+  .footer > .column {
+    padding: 25px;
+  }
+
+  .middle > .column {
+    height: 400px;
+    line-height: 400px;
+  }
+
+  .header ul {
+    margin: auto;
+  }
+
+  .header li {
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  .module {
+    /* Let's add a background color to our modules so they're clearly visible.*/
+    background: lightblue;
+
+    /* Now let's give our modules a left and right margin of 10px */
+    margin: 0 10px 0 10px;
+  }
+
+  .column-1 { width: 8.333%; }
+  .column-2 { width: 16.66%; }
+  .column-3 { width: 25%; }
+  .column-4 { width: 33.33%; }
+  .column-5 { width: 41.66%; }
+  .column-6 { width: 50%; }
+  .column-7 { width: 58.33%; }
+  .column-8 { width: 66.66%; }
+  .column-9 { width: 75%; }
+  .column-10 { width: 83.33%; }
+  .column-11 { width: 91.66%; }
+  .column-12 { width: 100%; }
+  ```
+  <br>
+</details>
 
 ## Flexible Media & Units
 
@@ -64,9 +144,9 @@ video {
 }
 ```
 
-### Relative units of measurement
+### Relative units of measurement (10 min / 35)
 
-So far, we've been working with pixels (absolute unit of measurement) and
+So far, we've been working mostly with pixels (absolute unit of measurement) and
 percentages (relative unit of measurements)
 
 - em and rem
@@ -74,8 +154,9 @@ percentages (relative unit of measurements)
 - vmin and vmax
 - ex and ch
 
-## Media Queries (10 min)
+[Doc dive](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 
+## Media Queries (10 min / 45)
 
 One way to adjust the styles depending on the device's size is by using media queries:
 
@@ -124,47 +205,54 @@ min-width | max-width | min-height | max-height
 Be sure to include
 
 ```html
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
->Mobile Safari introduced the "viewport meta tag" to let web developers control
-the viewport's size and scale. Many other mobile browsers now support this tag,
-although it is not part of any web standard.  This setting makes the width of
-the browser’s viewport equal to the width of the device’s screen.
+This tells the browser to render the width of the page to match the screen-width which vastly improves the experience on mobile if the site is designed to be responsive.
 
-## You do: Media Queries (15 min)
+_**Note:**_ don't use this tag if your site isn't designed to be responsive. You'll make the user experience worse.
 
-### Step 1
+This is the most common option, but not the only one. If you're curious:
+- [CSS-tricks article](https://css-tricks.com/snippets/html/responsive-meta-tag/)
+- [MDN article](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
 
-Working with the example above, create a [jsfiddle](https://jsfiddle.net/),
-[codepen](http://codepen.io/pen/), or
-[webpage](http://justinjackson.ca/words.html) that includes at least two media
+
+# Exercise: Media Queries (15 min / 60)
+
+Working with the example above, create a
+[codepen](http://codepen.io/pen/) that includes at least two media
 queries.
 
 When the viewport is less than 800px wide, make the background yellow. When the viewport is less
 than 400px wide, make the background green.
 
+| < 400px wide | < 800px wide | else |
+|:-------------|:-------------|:-----|
+| green        | yellow       | red  |
+
 ![](https://dl.dropboxusercontent.com/s/o8xh3hdql9oijo2/mediaqueries.gif?dl=0)
 
-### Step 2
+### Bonus
 
 Try out a few of the properties above. You can combine media queries to get several different results.
 
 i.e. what combination of media queries could produce the following grid as the
 viewport [changes size](http://maximin.tv/srm/)?
 
-| green     | yellow | red    |
+|           |        |        |
 |:----------|:-------|:-------|
+| green     | yellow | red    |
 | turqouise | green  | purple |
 
 [Like this.](http://recordit.co/UfnuMHQbWa)
 
-[See more here](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-[Read more](https://css-tricks.com/logic-in-media-queries/)
+More:
+- [See more here](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [Read more](https://css-tricks.com/logic-in-media-queries/)
 
-## Break (10 min)
+## Break (10 min / 70)
 
-## You do: Convert the "Craigslist Grid" (15 min)
+# Bonus exercise: Convert the "Craigslist Grid" (15 min)
 
 https://github.com/ga-dc/craigslist_grid
 
@@ -185,3 +273,5 @@ https://github.com/ga-dc/craigslist_grid
 - Media Query [Logical Operators](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Logical_operators)
 - [Viewports](http://www.quirksmode.org/mobile/viewports.html)
 - Book: Responsive Web Design, Ethan Marcotte
+
+## [<- Back to main page](./readme.md)

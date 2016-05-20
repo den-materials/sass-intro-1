@@ -7,13 +7,14 @@
 - Understand how to use nesting to help DRY up selectors and properties
 - Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
-## Framing: What is Sass? (15 min)
+<!-- Assuming responsive took ~70 -->
+## Framing: What is Sass?
 
 ![Sass Icon](http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg)
 
 ---
 
-### Syntactically awesome stylesheets
+### Syntactically awesome stylesheets (3 min)
 
 - Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
 
@@ -23,7 +24,7 @@
 
 - Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly...
 
-## The Finished Product
+## You do: Turn and Talk (10 min / 12)
 
 Here are a few examples of Jesse playing with CSS/Sass.  Let's look at the css
 that is required to produce this effect.  Then, compare that to the Sass we used
@@ -41,13 +42,13 @@ to generate the css (by clicking "View Compiled").
 Whenever you are looking for something to do, come back and analyze these
 examples.  How did we create that Space Invader?  You'd be surprised.  I was.
 
-## Sass VS. scss
+## Sass VS. scss (2 / 15)
 
 Sass syntax originated from [Haml](http://haml.info/). Some developers didn't
 like a syntax that was so foreign from CSS and so the developers that created
 Sass introduced SCSS which is 'the new main syntax' for Sass.
 
-# Variables
+# Variables (5/ 20)
 
 Sass allows us to use variables which are defined with `$`. Variables can store
 strings, numbers, colors, arrays, and objects. Variable names should relate to
@@ -108,7 +109,7 @@ p {
 
 > notice we can do multiple operations and mix and match units
 
-# Nesting (10 min)
+# Nesting (10 min / 30)
 
 As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
 
@@ -135,7 +136,7 @@ As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
   </blockquote>
 </details>
 
-### The & selector (10 min)
+### The & selector
 
 Copy this scss into [sassmeister](http://www.sassmeister.com/).
 
@@ -209,8 +210,6 @@ Properties can also be nested which is helpful to long ones
   <br>
 </details>
 
-## Break
-
 # Comments
 
 [Let's check out the docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments)
@@ -218,7 +217,9 @@ Properties can also be nested which is helpful to long ones
 - CSS Style Comments remain (`/* comment */`).
 - Single line comments do not (`// comment`)
 
-# Extends & Inheritance
+## Break (10 min / 40)
+
+# Extends & Inheritance (5 / 45)
 
 The sass `@extend` directive lets a css selector inherit properties from another selector. This helps keep Sass super dry.
 
@@ -289,7 +290,7 @@ Very similar to `require` in node - allows an easy way to break styles into sepa
 @import 'grids';
 ```
 
-# Mixins
+# Mixins (5 / 50)
 
 Remember the clearfix problem from the CSS2 lesson.  We had to write specific
 css to ensure floats did not effect the next element. Imagine trying to remember
@@ -342,7 +343,7 @@ body::after{
   <br>
 </details>
 
-### Libraries/Frameworks
+### Libraries/Frameworks (5 / 55)
 
 There a good number of [libraries](http://www.hongkiat.com/blog/mixin-library-for-sass/) of mixins and functions that can extend the functionality of Sass. Most are used by `@import`ing the library `@include`ing the mixins where desired.
 
@@ -357,7 +358,7 @@ used it but it's out there and pretty popular.
 
 If you're worried about vendor prefixes there is also [autoprefixer](https://github.com/postcss/autoprefixer). It's not a sass thing but cool regardless and potentially a good alternative to compass if you're only concerned with prefixes.
 
-# Functions
+# Functions (5 / 60)
 
 Sass comes with a [big list](http://sass-lang.com/documentation/Sass/Script/Functions.html) of built-in
 functions. These built-in functions do a bunch of stuff like manipulating
@@ -397,7 +398,7 @@ accept variables.
 
 [Check out more](https://www.sitepoint.com/sass-basics-function-directive/)
 
-# Exercise: Flash (15 min)
+# Exercise: Flash (15 / 75)
 
 Use SCSS to style the provided elements to recreate the image at bottom. You shouldn't need to modify the HTML at all.
 
