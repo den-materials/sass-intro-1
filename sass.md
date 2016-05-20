@@ -18,8 +18,8 @@ Sass (130)
 
 - Be able to explain what Sass is and why it's used
 - Use variables to make code more flexible
-- Use nesting to dry up CSS
-- Use @include and @extend to create mixins and inherit from other rules
+- Understand how to use nesting to help DRY up selectors and properties
+- Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
 ## Framing: What is Sass? (15 min)
 
@@ -120,6 +120,8 @@ p {
 }
 ```
 
+> notice we can do multiple operations and mix and match units
+
 # Nesting (10 min)
 
 As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
@@ -149,7 +151,7 @@ As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
 
 ### The & selector (10 min)
 
-Copy this scss into [precess.co](http://precess.co).
+Copy this scss into [sassmeister](http://www.sassmeister.com/).
 
 ```css
 .nav{
@@ -228,11 +230,9 @@ Properties can also be nested which is helpful to long ones
 - CSS Style Comments remain (`/* comment */`).
 - Single line comments do not (`// comment`)
 
-# Imports
-
-
-
 # Extends & Inheritance
+
+The sass `@extend` directive lets a css selector inherit properties from another selector. This helps keep Sass super dry.
 
 ```css
 .message {
@@ -257,15 +257,57 @@ Properties can also be nested which is helpful to long ones
 }
 ```
 
-# Mixins (10 min)
+<details>
+  <summary>
+  Compiles to:
+  </summary>
+  <br>
+
+  ```css
+  .message, .success, .error, .warning {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    color: #333;
+  }
+
+  .success {
+    border-color: green;
+  }
+
+  .error {
+    border-color: red;
+  }
+
+  .warning {
+    border-color: yellow;
+  }
+  ```
+
+  <br>
+  <br>
+</details>
+
+> example from [sass guide](http://sass-lang.com/guide)
+
+# Imports
+
+Very similar to `require` in node - allows an easy way to break styles into separate files and include them where you want. Makes it really easy to separate styling concerns without having a bunch of `<link src="">`
+
+```scss
+@import 'grids.scss';
+
+// the file type is optional:
+
+@import 'grids';
+```
+
+# Mixins
 
 Remember the clearfix problem from the CSS2 lesson.  We had to write specific
 css to ensure floats did not effect the next element. Imagine trying to remember
 that "fix" and typing it in correctly every time you needed it.  Now, you can
 make a `clearfix` mixin that codifies the rules.  Then, those rules can be
 included in any CSS rule we want.
-
-Let's look at this in [precess.co](http://precess.co).
 
 ```css
 // Make this in one file
@@ -286,29 +328,133 @@ body::after{
 }
 ```
 
+<details>
+  <summary>
+  Compiles to:
+  </summary>
+  <br>
+
+  ```css
+  body::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .nav::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+  }
+  ```
+
+  <br>
+  <br>
+</details>
+
+### Libraries/Frameworks
+
+There a good number of [libraries](http://www.hongkiat.com/blog/mixin-library-for-sass/) of mixins and functions that can extend the functionality of Sass. Most are used by `@import`ing the library `@include`ing the mixins where desired.
+
+Bourbon + Neat are similar to bootstrap but are a lot more flexible and don't
+require a bunch of classes everywhere. Super cool!
+- [Bourbon](http://bourbon.io/) is "a simple and lightweight mixin library."
+  - [Neat](http://neat.bourbon.io/) is "a lightweight semantic grid framework for Sass and Bourbon."
+
+Compass is another framework that adds a bunch of extra features, a lot of the most useful ones are mixins that add vendor prefixes to styles. I've never
+used it but it's out there and pretty popular.
+- [Compass](http://compass-style.org/examples/compass/tables/all/)
+
+If you're worried about vendor prefixes there is also [autoprefixer](https://github.com/postcss/autoprefixer). It's not a sass thing but cool regardless and potentially a good alternative to compass if you're only concerned with prefixes.
+
 # Functions
 
-## Exercise: Flash (15 min)
+Sass comes with a [big list](http://sass-lang.com/documentation/Sass/Script/Functions.html) of built-in
+functions. These built-in functions do a bunch of stuff like manipulating
+colors, modifying strings/lists/maps(objects), and doing more complex math.
+
+Some examples:
+```scss
+compliment($color)
+// returns the compliment of a color
+
+darken($color, $amount)
+// makes a color darker
+
+length($list)
+// returns the lenght of a list
+
+max($numbers...)
+// finds the maximum of several numbers
+```
+
+### Custom Function Directives
+
+You can also create your own custom function directives to define logic that can
+be reused in your styles. There a bunch of control directives like `@if()`,
+`@each`, and `@for` to do programmer-y things.
+
+[Check out more](https://www.sitepoint.com/sass-basics-control-directives-expressions/)
+
+### Functions vs. Mixins
+
+For defining your own custom behavior you might be tempted to reach for a mixin
+when you'd be better served by a function. They are similar because they both
+accept variables.
+
+**Mixins** - should be used to generate styles
+**Functions** - are used to encapsulate logic like calculating a value
+
+[Check out more](https://www.sitepoint.com/sass-basics-function-directive/)
+
+# Exercise: Flash (15 min)
+
+Use SCSS to style the provided elements to recreate the image at bottom. You shouldn't need to modify the HTML at all.
+- _Hint:_ try defining the styles in a mixin and then including it for each div.whateverClass
 
 [Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
 <details>
   <summary>
-	Hint
+	Solution:
   </summary>
   [Solution](http://codepen.io/adambray/pen/yegjdj)
 </details>
 
-## Conclusion
+# Caveat - using Sass
+
+Webpages don't know what to do with raw Sass/SCSS, these files need to be
+compiled to regular CSS to be used.
+
+This can be done a number of different ways:
+- installing the sass gem `gem install sass` and compile with `sassc <whatever-scss-filename.scss> <whatever-css-filename.css>`
+  - there is also a `--watch` flag that allows you to watch a file and autocompile every time you save it
+- using a GUI program/plugin - I've used sass-autocompile and it's great
+  - `apm install sass-autocompile`
+- Letting a build tool like grunt/gulp/webpack/broccoli/npm-scripts handle the compliation with an additional package/plugin
+
+# Conclusion
 
 - Name 3 benefits of Sass.
-- How do `@mixin` and `@include` work together to make css more managable?
+- Describe how variables work in Sass
+- Understand how to use nesting to help DRY up selectors and properties
+- Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
-Want more?  
-- [Build your own framework -scotch tutorial](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
+### Want more?  
+- [Super cool custom framework](http://www.sassmeister.com/gist/0a041d0fb2d72758c280)
+  - From the scotch.io tutoral - [build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
+]
 - Or, check out the follow-up lesson, [Sass Directives](https://github.com/ga-wdi-lessons/sass-directives)
 
-## References
+### References
 
+Guides:
+- [Official getting started guide](http://sass-lang.com/guide)
+- [Scotchi.io - Build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
+- [Sitepoint - Function basics](https://www.sitepoint.com/sass-basics-function-directive/)
+- [Docs for functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+
+Examples:
 - [3D Buttons with Sass](https://jesse.sh/makes-3d-buttons-with-sass/)
 - Github's Style Guide, [Primer CSS](http://primercss.io/about/)
-- http://sass-lang.com/documentation/Sass/Script/Functions.html
