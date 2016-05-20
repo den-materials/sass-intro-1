@@ -1,17 +1,3 @@
-Sass (130)
-
-- what is sass?
-
-- variables
-- nesting
-  - reference parent `&`
-  - nested properties
-- imports
-- mixins
-- extend/inherit
-- operators - math
-
-
 # Sass - Intro
 
 ## Learning Objectives
@@ -27,7 +13,7 @@ Sass (130)
 
 ---
 
-### Some would say Sass is...
+### Syntactically awesome stylesheets
 
 - Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
 
@@ -69,12 +55,12 @@ their useage and not there value e.g. ✅`$border-color` vs. ❌`$red`. One big
 advantage to using variables it makes it easy to update properties.
 
 Assignment:
-```css
+```scss
 $base-color: blue;
 ```
 
 Usage:
-```css
+```scss
 body {
   background-color: $base-color;
 }
@@ -82,7 +68,7 @@ body {
 
 Variables are scoped to the selector they are defined in - if they not defined in a selector they are global. Just like in other languages the local scope replaces the higher scope _locally_.
 
-```css
+```scss
 $font-stack: Helvetica, sans-serif;
 
 h1 {
@@ -99,7 +85,7 @@ p {
 
 # Operations
 
-Sass allows us to do smoe simple math in our stylesheets
+Sass allows us to do some simple math in our stylesheets
 
 | Symbol | Operation      |
 |:-------|:---------------|
@@ -111,7 +97,7 @@ Sass allows us to do smoe simple math in our stylesheets
 | ==     | Equality       |
 | !=     | Inequality     |
 
-```css
+```scss
 $heading-height: 32px;
 
 p {
@@ -153,7 +139,7 @@ As we've seen, CSS isn't very dry.  Take this nested CSS, for example.
 
 Copy this scss into [sassmeister](http://www.sassmeister.com/).
 
-```css
+```scss
 .nav{
   li{
     display: inline-block;
@@ -188,7 +174,7 @@ Ask yourself, can this style be achieved with fewer selectors?
 
 Properties can also be nested which is helpful to long ones
 
-```css
+```scss
 // SCSS
 .card-right {
   border: {
@@ -223,6 +209,8 @@ Properties can also be nested which is helpful to long ones
   <br>
 </details>
 
+## Break
+
 # Comments
 
 [Let's check out the docs](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#comments)
@@ -234,7 +222,7 @@ Properties can also be nested which is helpful to long ones
 
 The sass `@extend` directive lets a css selector inherit properties from another selector. This helps keep Sass super dry.
 
-```css
+```scss
 .message {
   border: 1px solid #ccc;
   padding: 10px;
@@ -309,7 +297,7 @@ that "fix" and typing it in correctly every time you needed it.  Now, you can
 make a `clearfix` mixin that codifies the rules.  Then, those rules can be
 included in any CSS rule we want.
 
-```css
+```scss
 // Make this in one file
 @mixin clearfix(){
   /* clearfix */
@@ -384,7 +372,7 @@ darken($color, $amount)
 // makes a color darker
 
 length($list)
-// returns the lenght of a list
+// returns the length of a list
 
 max($numbers...)
 // finds the maximum of several numbers
@@ -412,9 +400,11 @@ accept variables.
 # Exercise: Flash (15 min)
 
 Use SCSS to style the provided elements to recreate the image at bottom. You shouldn't need to modify the HTML at all.
-- _Hint:_ try defining the styles in a mixin and then including it for each div.whateverClass
 
 [Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
+
+- _Hint:_ try defining the styles in a mixin and then including it for each div.whateverClass
+
 <details>
   <summary>
 	Solution:
@@ -428,7 +418,8 @@ Webpages don't know what to do with raw Sass/SCSS, these files need to be
 compiled to regular CSS to be used.
 
 This can be done a number of different ways:
-- installing the sass gem `gem install sass` and compile with `sassc <whatever-scss-filename.scss> <whatever-css-filename.css>`
+- installing the sass gem `gem install sass` and comple with:
+  - `$ sassc <whatever-input-filename.scss> <whatever-output-filename.css>`
   - there is also a `--watch` flag that allows you to watch a file and autocompile every time you save it
 - using a GUI program/plugin - I've used sass-autocompile and it's great
   - `apm install sass-autocompile`
@@ -441,6 +432,12 @@ This can be done a number of different ways:
 - Understand how to use nesting to help DRY up selectors and properties
 - Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
+## Exit Ticket (3 min)
+
+Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
+
+This helps us help you! We'll review responses for each exit ticket and start to implement them in future lessons.
+
 ### Want more?  
 - [Super cool custom framework](http://www.sassmeister.com/gist/0a041d0fb2d72758c280)
   - From the scotch.io tutoral - [build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
@@ -451,8 +448,10 @@ This can be done a number of different ways:
 
 Guides:
 - [Official getting started guide](http://sass-lang.com/guide)
-- [Scotchi.io - Build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
+- [Scotch.io - Build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
+- [TheSassWay - Pure sass functions](http://thesassway.com/advanced/pure-sass-functions)
 - [Sitepoint - Function basics](https://www.sitepoint.com/sass-basics-function-directive/)
+- [Sitepoint - Control directives](https://www.sitepoint.com/sass-basics-control-directives-expressions/)
 - [Docs for functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 
 Examples:
