@@ -1,4 +1,4 @@
-# Sass & Responsive Wedesign
+# Sass & Responsive Web Design
 
 This lesson is broken down into two parts:
 
