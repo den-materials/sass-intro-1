@@ -78,9 +78,28 @@ h1 {
 }
 
 p {
-  font: $font-stack
+  font: 100% $font-stack;
 }
 ```
+
+<details class="qa">
+  <summary class="question">
+    Compiles to:
+  </summary>
+  <blockquote class="answer">
+  <br>
+  ```css
+  h1 {
+    font: 100% Raleway, sans-serif;
+  }
+
+  p {
+    font: 100% Helvetica, sans-serif;
+  }
+  ```
+  <br>
+  </blockquote>
+</details>
 
 > Variables in a selector can be hoisted to the global scope with `!global`
 
@@ -393,8 +412,8 @@ For defining your own custom behavior you might be tempted to reach for a mixin
 when you'd be better served by a function. They are similar because they both
 accept variables.
 
-**Mixins** - should be used to generate styles
-**Functions** - are used to encapsulate logic like calculating a value
+- **Mixins** - should be used to generate styles
+- **Functions** - are used to encapsulate logic like calculating a value
 
 [Check out more](https://www.sitepoint.com/sass-basics-function-directive/)
 
