@@ -7,14 +7,14 @@ This lesson is broken down into two parts:
 
 # Learning Objectives
 
-## Responsive Design
+## Flexbox
 
-- Give an example of a problem solved by Flex Box
-- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible
-- Contrast Flex Containers and Flex Items
-- Draw a diagram that includes: Flex Container, Flex Item, Main and Cross Axes, Starts and Ends for all Axes, and Main and Cross Sizes
-- Contrast `align-items` and `align-self`
-- Explain what is meant by the "Holy Grail Layout"
+- Give an example of a problem solved by Flexbox.
+- Given a desktop-first webpage, make it look presentable on mobile devices (and vice-versa) with as little CSS as possible.
+- Contrast flex containers and flex items.
+- Draw a diagram that includes: flex container, flex item, main and cross-axes, starts and ends for all axes, and main and cross-sizes.
+- Contrast `align-items` and `align-self`.
+- Explain what is meant by the "Holy Grail Layout".
 
 ## Sass
 
