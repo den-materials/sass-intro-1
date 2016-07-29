@@ -239,7 +239,7 @@ http://bennettfeely.com/flexplorer/
 </details>
 
 <details>
-  <summary><strong><code>flex-grow</code></strong></summary>
+  <summary><strong><code>order</code></strong></summary>
 
   > The order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
 
