@@ -1,4 +1,4 @@
-# Sass - Intro
+# Intro to Sass
 
 ## Learning Objectives
 
@@ -7,7 +7,6 @@
 - Understand how to use nesting to help DRY up selectors and properties
 - Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
-<!-- Assuming responsive took ~70 -->
 ## Framing: What is Sass?
 
 ![Sass Icon](http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg)
@@ -24,7 +23,7 @@
 
 - Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly...
 
-## You do: Turn and Talk (10 min / 12)
+## You Do: Turn and Talk (10 min / 12)
 
 Here are a few examples of Jesse playing with CSS/Sass.  Let's look at the css
 that is required to produce this effect.  Then, compare that to the Sass we used
@@ -417,33 +416,35 @@ accept variables.
 
 [Check out more](https://www.sitepoint.com/sass-basics-function-directive/)
 
-# Exercise: Flash (15 / 75)
-
-Use SCSS to style the provided elements to recreate the image at bottom. You shouldn't need to modify the HTML at all.
+# Exercise: Flash (15 minutes / 75)
 
 [Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
 
-- _Hint:_ try defining the styles in a mixin and then including it for each div.whateverClass
+Use SCSS to style the provided elements to recreate the image at bottom of the Codepen. You shouldn't need to modify the HTML at all.
+
+Don't try to implement all the above Sass features at once. Instead, take the following steps...
+* Complete the exercise, making sure to use variables for repeated values and nesting selectors where applicable.
+* Once you're done, identify repeated chunks of code and define them in single selectors. Then apply them throughout your code using `@extend` statements.
+* **BONUS:** Use a mixin or function to to generate the font and background colors for each button.
 
 <details>
   <summary>
-	Solution:
+	 **SOLUTION:**
   </summary>
-  [Solution](http://codepen.io/adambray/pen/yegjdj)
+  [Only take a peek. No copy-and-pasting.](http://codepen.io/adambray/pen/yegjdj)
 </details>
 
-# Caveat - using Sass
+# Caveat
 
 Webpages don't know what to do with raw Sass/SCSS, these files need to be
 compiled to regular CSS to be used.
 
-This can be done a number of different ways:
-- installing the sass gem `gem install sass` and comple with:
-  - `$ sassc <whatever-input-filename.scss> <whatever-output-filename.css>`
-  - there is also a `--watch` flag that allows you to watch a file and autocompile every time you save it
-- using a GUI program/plugin - I've used sass-autocompile and it's great
+This can be done a number of different ways...
+- Installing the sass gem `gem install sass` and compile with `$ sassc <whatever-input-filename.scss> <whatever-output-filename.css>`
+  - There is also a `--watch` flag that allows you to watch a file and auto-compile every time you save it.
+- Using a GUI program/plugin like `sass-autocompile`
   - `apm install sass-autocompile`
-- Letting a build tool like grunt/gulp/webpack/broccoli/npm-scripts handle the compliation with an additional package/plugin
+- Letting a build tool like Grunt/Gulp/Webpack/npm-scripts handle the compilation with an additional package/plugin.
 
 # Conclusion
 
@@ -452,13 +453,8 @@ This can be done a number of different ways:
 - Understand how to use nesting to help DRY up selectors and properties
 - Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
-## Exit Ticket (3 min)
-
-Before you leave, plase take ~3 minutes to complete [this exit ticket.](https://docs.google.com/forms/d/1d03NYFphG6m7yAMUY1OlnJZMQWof7Rt6b5MX3Xn4ZPs/viewform)
-
-This helps us help you! We'll review responses for each exit ticket and start to implement them in future lessons.
-
 ### Want more?  
+
 - [Super cool custom framework](http://www.sassmeister.com/gist/0a041d0fb2d72758c280)
   - From the scotch.io tutoral - [build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
 ]

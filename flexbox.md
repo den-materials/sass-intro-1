@@ -1,7 +1,6 @@
 <!-- TODOs -->
 <!-- What's the non-flex answer for "You Tell Me"? -->
 <!-- Best way to display shortcomings of `position: fixed` for footer? -->
-<!-- Provide examples of the holy grail layout. -->
 
 # Flexbox
 
@@ -18,7 +17,7 @@ Screencasts
 - Contrast `align-items` and `align-self`.
 - Explain what is meant by the "Holy Grail Layout".
 
-## Problem 1: Vertical Alignment
+## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
 I have a `div`. I would like to center it vertically and horizontally on my page.
 
@@ -48,11 +47,43 @@ div {
 }
 ```
 
-This problem has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?
-* HTML was created with as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word that one would read from left to right.
-* So layout wasn't much of a concern in the beginning. But as the web has evolved, so has the needs of web designers. Layout is essential now -- why did we go so long without a tool to easily manage something as essential as vertical-centering.
-* It's incredibly difficult to establish new CSS standards. Not only do browsers often conflict on how to do things, it's hard enough to get the members of the [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) to agree on anything themselves.
-* Fortunately, Flexbox has slowly but surely become a standard over the past few years...
+<details>
+  <summary><strong>These might work...</strong></summary>
+
+  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the element. This can get tedious, however, when there is more than one element in a container.
+  >
+  > **Absolute Positioning**: You could use properties like `top` and `left` to position an element in the center. This, however, removes it from the document flow.
+
+</details>
+
+<details>
+  <summary><strong>These could work in other scenarios...</strong></summary>
+
+  > **`line-height`**: When vertically centering a single line of text, you can set the line-height to that of the whole container.
+  >
+  > **`vertical-align`**: Used to align words within a line of text (e.g., superscript, subscript).
+  >
+  > **`display: table`**: ???
+
+</details>
+
+<br/>
+
+<details>
+
+  <summary><strong>Vertical alignment has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?</strong></summary>
+
+  > HTML was created with as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word that one would read from left to right.
+  >
+  > So layout wasn't much of a concern in the beginning. But as the web has evolved, so has the needs of web designers. Layout is essential now -- why did we go so long without a tool to easily manage something as essential as vertical-centering.
+  >
+  > It's incredibly difficult to establish new CSS standards. Not only do browsers often conflict on how to do things, it's hard enough to get the members of the [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) to agree on anything themselves.
+
+</details>
+
+<br/>
+
+Fortunately, Flexbox has slowly but surely become a standard over the past few years...
 
 ### Flexbox to the Rescue
 
@@ -78,7 +109,7 @@ div {
 }
 ```
 
-## How It Works
+## How It Works (10 minutes / 0:10)
 
 ![flexbox diagram](img/flexbox-diagram.jpg)
 
@@ -88,15 +119,25 @@ First, you use `flex-direction` to indicate whether you want the items in the co
 
 When you specify a flex-direction, you can think of it as placing an axis in that direction across your flex container. So if you use `flex-direction: row` or `row-reverse`, this **main axis** will be the same as the X-axis (horizontal) on a graph. Otherwise, it'll be the Y-axis.
 
-Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`spacing-between` and `spacing-around`).
+Then, you determine how you want to align or **justify** the items along this main axis using the `justify-content` property. It'll do nice things for you like let you put even spacing between all the items (`space-between` and `space-around`).
 
 Finally, you control how you align the items along the axis that goes across the main axis -- the **cross axis**, if you will -- with the `align-items` property. If you have `flex-direction:row`, the main axis is the X-axis, and the cross-axis is the Y-axis.
 
 Lastly, you can also do nice things like control how you want things to line up across the cross-axis by using `align-content`, such as `space-between` and `space-around`.
 
+### In Summary...
+
+| Property | What's It Do? | Examples |
+|----------|---------------|----------|
+| **display**  |               | `flex`   |
+| **flex-direction** | Sets the directional flow of flex items | `row`, `column` |
+| **justify-content** | Align along flex-direction (main axis) | `center`, `space-between` |
+| **align-items** | Align along not-flex-direction (cross axis) | `flex-start`, `center` |
+| **align-content** | Space things along cross axis | `center`, `space-between` |
+
 > That's a lot of CSS properties! Don't worry, you're not expected to memorize all of them. Us instructors need to look them up all the time! [Here's a great resource](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
-## Problem 2: Make the Footer Stick
+## Problem 2: Make the Footer Stick (10 minutes / 0:35)
 
 I want my footer to lie along the bottom of my page.
 
@@ -128,7 +169,7 @@ footer {
 }
 ```
 
-Making the footer lie against the bottom of the screen* is pretty easy: just use absolute or fixed positioning. However, using absolute or fixed positioning means everything else on the page ignores my footer. The text of `<main>` could easily run under the footer. We want the text of my `main` to "push" the footer to the end of the page.
+Making the footer lie against the bottom of the screen is pretty easy: just use absolute or fixed positioning. However, using absolute or fixed positioning means everything else on the page ignores my footer. The text of `<main>` could easily run under the footer. We want the text to "push" the footer to the end of the page.
 
 ### Flexbox to the Rescue
 
@@ -152,27 +193,27 @@ footer {
 }
 ```
 
-#### What's the main axis on here?
-#### What's the cross axis?
+<details>
+  <summary><strong>What's the main axis on here? What about the cross axis?</strong></summary>
 
-Four more terms: the **main start** (`flex-start`), where the start of the main axis is, the **main end** (`flex-end`), and the cross starts and ends.
+  > Main: y-axis. Cross: x-axis.
 
-### To Recap
+</details>
 
-- `justify-content`: Align along flex-direction (main axis)
-- `align-items`: Align along not-flex-direction (cross axis)
-- `align-content`: Space things along main axis
+<br/>
 
-## You Do: More Flexbox Properties
+## You Do: More Flexbox Properties (25 minutes / 1:00)
 
-Take 10 minutes to read through these. In particular, look at the "Problems Solved by Flexbox".
-
-As you do this, come up with "Explain Like I'm 5" (ELI5) definitions for these CSS properties...
+Time for you to research some more Flexbox properties. You will be assigned one of the following...
 
 - `flex-basis`
 - `flex-shrink`
 - `flex-grow`
 - `order`
+
+Your task is to...
+* Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
+* Created a Codepen demonstrating its usage.
 
 https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
 
@@ -180,24 +221,55 @@ http://philipwalton.github.io/solved-by-flexbox/
 
 http://bennettfeely.com/flexplorer/
 
-#### What were your Definitions?
+#### What Were your Definitions?
 
 ### Recap
 
-- `flex-basis`: How big the flex items "want" to be
-- `flex-shrink`: If the flex container is too small to accommodate all the flex bases, the proportion a particular flex item will occupy
-- `flex-grow`: If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
-- `order`: The order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
+<details>
+  <summary><strong><code>flex-basis</code></strong></summary>
 
-## The Holy Grail Layout
+  > How big the flex items "want" to be
+
+</details>
+
+<br/>
+
+<details>
+  <summary><strong><code>flex-shrink</code></strong></summary>
+
+  > If the flex container is too small to accommodate all the flex bases, the proportion a particular flex item will occupy
+
+</details>
+
+<br/>
+
+<details>
+  <summary><strong><code>flex-grow</code></strong></summary>
+
+  > If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
+
+</details>
+
+<br/>
+
+<details>
+  <summary><strong><code>flex-grow</code></strong></summary>
+
+  > The order in which you want flex items to appear along the main access. The default is 0. Negative numbers are allowed.
+
+</details>
+
+## Break (10 minutes / 1:10)
+
+## The Holy Grail Layout (5 minutes / 1:15)
 
 This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
 
 Obviously, this layout won't work on tiny screens, unless you really like super-skinny columns. It's common to stack things on top of each other for mobile views to make one single column.
 
-Before flex box, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
+Before flexbox, this involved a lot of pushing and shoving with dimensions and positioning. You would essentially have to write two completely separate stylesheets: one for mobile, and one for desktop.
 
-With flex box, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
+With flexbox, just change the `flex-direction` for smaller screen sizes, and you're pretty much done!
 
 ```css
 body {
@@ -212,6 +284,8 @@ body {
 }
 ```
 
-## You Do: Hyrule Potion Shop
+> A design so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
+
+## You Do: Hyrule Potion Shop (10 minutes / 1:25)
 
 https://github.com/ga-dc/hyrule_potion_shop
