@@ -67,8 +67,6 @@ div {
 
 </details>
 
-<br/>
-
 #### An Aside
 
 Vertical alignment has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?
