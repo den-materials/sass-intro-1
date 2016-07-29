@@ -1,7 +1,3 @@
-<!-- TODOs -->
-<!-- What's the non-flex answer for "You Tell Me"? -->
-<!-- Best way to display shortcomings of `position: fixed` for footer? -->
-
 # Flexbox
 
 Screencasts
