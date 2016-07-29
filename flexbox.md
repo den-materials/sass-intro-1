@@ -194,8 +194,6 @@ footer {
 
 </details>
 
-<br/>
-
 ## You Do: More Flexbox Properties (25 minutes / 1:00)
 
 Time for you to research some more Flexbox properties. You will be assigned one of the following...
@@ -226,8 +224,6 @@ http://bennettfeely.com/flexplorer/
 
 </details>
 
-<br/>
-
 <details>
   <summary><strong><code>flex-shrink</code></strong></summary>
 
@@ -235,16 +231,12 @@ http://bennettfeely.com/flexplorer/
 
 </details>
 
-<br/>
-
 <details>
   <summary><strong><code>flex-grow</code></strong></summary>
 
   > If the flex container is too big for all the flex bases, the proportion a particular flex item will occupy
 
 </details>
-
-<br/>
 
 <details>
   <summary><strong><code>flex-grow</code></strong></summary>
