@@ -69,19 +69,15 @@ div {
 
 <br/>
 
-<details>
+#### An Aside
 
-  <summary><strong>Vertical alignment has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?</strong></summary>
+Vertical alignment has been the laughingstock of CSS for years. How can something so obvious be so difficult to accomplish?
 
-  > HTML was created with as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word that one would read from left to right.
-  >
-  > So layout wasn't much of a concern in the beginning. But as the web has evolved, so has the needs of web designers. Layout is essential now -- why did we go so long without a tool to easily manage something as essential as vertical-centering.
-  >
-  > It's incredibly difficult to establish new CSS standards. Not only do browsers often conflict on how to do things, it's hard enough to get the members of the [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) to agree on anything themselves.
-
-</details>
-
-<br/>
+> HTML was created as a document-oriented language. CSS emerged as a way to make an HTML file appear more document-like. Literally, like something you would make in Microsoft Word.
+>
+> So layout wasn't much of a concern in the beginning. But as the web has evolved, so has the needs of developers. So why hasn't a standard for vertical alignment emerged accordingly?
+>
+> It's difficult to establish new CSS standards. The [CSS Working Group](https://en.wikipedia.org/wiki/CSS_Working_Group) has a hard time agreeing on anything, especially cross-browser standards.
 
 Fortunately, Flexbox has slowly but surely become a standard over the past few years...
 
