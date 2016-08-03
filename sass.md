@@ -15,7 +15,7 @@
 
 ### Syntactically Awesome Stylesheets
 
-- Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
+Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
 - You write a combination of CSS and SassScript, which compiles to proper CSS.
 - It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax.
 - Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly...
@@ -27,8 +27,8 @@
 Explore these Codepens. When you open them, you'll notice that the CSS column has a header of CSS (scss). This means that you're currently looking at Sass. Compare this to what you see when you click on the drop-down arrow at the top-right of the column and click "View Compiled CSS". Now you're looking at the CSS after it's been compiled from Sass.
 
 Some things to consider...
-* Which portions of the CSS are Sass and how do they look different from vanilla CSS?
-* In what ways is writing Sass easier / faster than writing out vanilla CSS?
+* In what ways does Sass look different than Vanilla CSS?
+* How might writing out Sass be easier / faster than writing out vanilla CSS?
 
 - [BAMSAY](http://codepen.io/jshawl/pen/cLJal)
 - [Boxes](http://codepen.io/jshawl/pen/nHDLz)
@@ -36,6 +36,8 @@ Some things to consider...
 - [A Button](http://codepen.io/jshawl/pen/bcjyH)
 - [Forest](http://codepen.io/jshawl/pen/cJjIm)
 - [Space Invader](http://codepen.io/jshawl/pen/cnyrJ)
+
+> We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
 ## Break (5 minutes / 1:45)
 

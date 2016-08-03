@@ -15,7 +15,9 @@ Screencasts
 
 ## Problem 1: Vertical Alignment (15 minutes / 0:15)
 
-I have a `div`. I would like to center it vertically and horizontally on my page.
+Let's start out by talking about a problem that anybody who has written CSS has had to deal with:
+
+**I have a `div`. I would like to center it vertically and horizontally on my page.**
 
 #### You Tell Me: What Should I Try?
 
@@ -58,10 +60,10 @@ div {
   > **`line-height`**: When vertically centering a single line of text, you can set the line-height to that of the whole container.
   >
   > **`vertical-align`**: Used to align words within a line of text (e.g., superscript, subscript).
-  >
-  > **`display: table`**: ???
 
 </details>
+
+> The tough part is that how to vertically center a element depends on its context. Depending on your situation, one or more of the above techniques could work. [Here's an enlightening post on the matter](https://css-tricks.com/centering-in-the-unknown/).
 
 #### An Aside
 

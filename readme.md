@@ -1,5 +1,7 @@
 # Flexbox & Sass
 
+CSS can be a pain. In today's lesson, we will talk about two tools -- [Flexbox](./flexbox.md) and [Sass](./sass.md) -- that will make the styling process a little less stressful.
+
 This lesson is broken down into two parts:
 
 1. [Flexbox](./flexbox.md)
@@ -18,7 +20,7 @@ This lesson is broken down into two parts:
 
 ## Sass
 
-- Be able to explain what Sass is and why it's used
-- Use variables to make code more flexible
-- Understand how to use nesting to help DRY up selectors and properties
-- Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
+- Be able to explain what Sass is and why it's used.
+- Use variables to make code more flexible.
+- Understand how to use nesting to help DRY up selectors and properties.
+- Differentiate between `@extend`, `@import`, `@mixin` & `@include` and `@function`.
