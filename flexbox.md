@@ -245,6 +245,8 @@ http://bennettfeely.com/flexplorer/
 
 ## The Holy Grail Layout (5 minutes / 1:15)
 
+![holy grail layout](img/holy-grail-layout.gif)
+
 This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
 
 Obviously, this layout won't work on tiny screens, unless you really like super-skinny columns. It's common to stack things on top of each other for mobile views to make one single column.
@@ -266,7 +268,7 @@ body {
 }
 ```
 
-> A design so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
+> A layout so holy, [it has its own Wikipedia article](https://en.wikipedia.org/wiki/Holy_Grail_(web_design)).
 
 ## You Do: Hyrule Potion Shop (10 minutes / 1:25)
 
