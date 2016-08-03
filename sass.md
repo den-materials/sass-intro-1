@@ -17,7 +17,7 @@
 
 Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
 - You write a combination of CSS and SassScript, which compiles to proper CSS.
-- It allows you to use variables, nested rules, mixins, inline imports, and more, all with a fully CSS-compatible syntax.
+- It allows you to use variables, nested rules, mixins, inline imports and more, all with a fully CSS-compatible syntax.
 - Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly...
 
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
