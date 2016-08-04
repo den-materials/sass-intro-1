@@ -121,6 +121,7 @@ If you're group finishes early, look into Sass functions!
 
 #### Resources
 
+* [Sass Documentation](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 * [Pure Sass Functions](http://thesassway.com/advanced/pure-sass-functions)
 
 # Exercise: Flash (15 minutes)
