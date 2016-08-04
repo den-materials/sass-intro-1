@@ -115,7 +115,7 @@ advantage to using variables it makes it easy to update properties.
 * [Handy Sass Mixins](https://web-design-weekly.com/2013/05/12/handy-sass-mixins/)
 * [The Extend Concept](https://css-tricks.com/the-extend-concept/)
 
-# BONUS - V: Functions
+### BONUS - V: Functions
 
 If you're group finishes early, look into Sass functions!
 
