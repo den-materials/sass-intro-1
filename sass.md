@@ -51,7 +51,8 @@ For the remainder of the class, you will be divided into group that will researc
 
 ### I. Variables
 
-Questions
+#### Questions
+
 * What are Sass variables? What problem do they solve?
 * How do you define a variable?
 * What values can you store in a variable?
@@ -71,7 +72,8 @@ advantage to using variables it makes it easy to update properties.
 
 ### II. Nesting
 
-Questions
+#### Questions
+
 * What does "nesting" mean in Sass? What problem does it solve?
 * What does `&` mean?
 * What's the difference between selector nesting and property nesting? Show examples of each.
@@ -84,7 +86,8 @@ Questions
 
 ### III. Extends & Inheritance
 
-Questions
+#### Questions
+
 * What is Sass inheritance? What problem does it solve?
 * How do we use `@extend` to implement inheritance?
 * What does an `@extend` example look like when compiled to vanilla CSS.
@@ -96,9 +99,10 @@ Questions
 * [Extending In Sass Without A Mess](https://www.smashingmagazine.com/2015/05/extending-in-sass-without-mess/)
 * [The Extend Concept](https://css-tricks.com/the-extend-concept/)
 
-# IV: Mixins
+### IV: Mixins
 
-Questions
+#### Questions
+
 * What are mixins? What problem do they solve?
 * How do we define and use a mixin?
 * In what way might a mixin resemble a programming language?
