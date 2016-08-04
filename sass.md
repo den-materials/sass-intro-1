@@ -30,6 +30,7 @@ Some things to consider...
 * In what ways does Sass look different than Vanilla CSS?
 * How might writing out Sass be easier / faster than writing out vanilla CSS?
 
+Sass Examples
 - [BAMSAY](http://codepen.io/jshawl/pen/cLJal)
 - [Boxes](http://codepen.io/jshawl/pen/nHDLz)
 - [Bullseye](http://codepen.io/jshawl/pen/wpeit)
