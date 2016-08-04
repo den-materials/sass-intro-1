@@ -207,13 +207,12 @@ Your task is to...
 * Come up with [ELI5 ("Explain Like I'm 5")](https://www.reddit.com/r/explainlikeimfive) definition for the property.
 * Created a Codepen demonstrating its usage.
 
-https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties
+#### Some Helpful Resources
 
-http://philipwalton.github.io/solved-by-flexbox/
-
-http://bennettfeely.com/flexplorer/
-
-#### What Were your Definitions?
+- [CSS Tricks' Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Visual Guide to CSS Flexbox Properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+- [Solved by Flexbox](http://philipwalton.github.io/solved-by-flexbox/)
+- [Flexplorer](http://bennettfeely.com/flexplorer/)
 
 ### Recap
 
