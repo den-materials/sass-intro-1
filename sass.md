@@ -30,7 +30,8 @@ Some things to consider...
 * In what ways does Sass look different than Vanilla CSS?
 * How might writing out Sass be easier / faster than writing out vanilla CSS?
 
-Sass Examples
+#### Sass Examples
+
 - [BAMSAY](http://codepen.io/jshawl/pen/cLJal)
 - [Boxes](http://codepen.io/jshawl/pen/nHDLz)
 - [Bullseye](http://codepen.io/jshawl/pen/wpeit)
@@ -62,6 +63,12 @@ strings, numbers, colors, arrays, and objects. Variable names should relate to
 their usage and not there value e.g. ✅`$border-color` vs. ❌`$red`. One big
 advantage to using variables it makes it easy to update properties.
 
+#### Resources
+
+* [Sass Documentation](http://sass-lang.com/guide)
+* [Sass Variables](https://robots.thoughtbot.com/sass-variables)
+* [Getting Started with Sass](http://alistapart.com/article/getting-started-with-sass)
+
 ### II. Nesting
 
 Questions
@@ -69,6 +76,11 @@ Questions
 * What does `&` mean?
 * What's the difference between selector nesting and property nesting? Show examples of each.
 * How much nesting is too much nesting?
+
+#### Resources
+
+* [Sass Documentation](http://sass-lang.com/guide)
+* [The Inception Rule](http://thesassway.com/beginner/the-inception-rule)
 
 ### III. Extends & Inheritance
 
@@ -78,6 +90,12 @@ Questions
 * What does an `@extend` example look like when compiled to vanilla CSS.
 * What are some common use cases?
 
+#### Resources
+
+* [Sass Documentation](http://sass-lang.com/guide)
+* [Extending In Sass Without A Mess](https://www.smashingmagazine.com/2015/05/extending-in-sass-without-mess/)
+* [The Extend Concept](https://css-tricks.com/the-extend-concept/)
+
 # IV: Mixins
 
 Questions
@@ -85,6 +103,21 @@ Questions
 * How do we define and use a mixin?
 * In what way might a mixin resemble a programming language?
 * What is a common example of a mixin?
+
+#### Resources
+
+* [Sass Documentation](http://sass-lang.com/guide)
+* [The Mixin Directive](https://www.sitepoint.com/sass-basics-the-mixin-directive/)
+* [Handy Sass Mixins](https://web-design-weekly.com/2013/05/12/handy-sass-mixins/)
+* [The Extend Concept](https://css-tricks.com/the-extend-concept/)
+
+# BONUS - V: Functions
+
+If you're group finishes early, look into Sass functions!
+
+#### Resources
+
+* [Pure Sass Functions](http://thesassway.com/advanced/pure-sass-functions)
 
 # Exercise: Flash (15 minutes)
 
