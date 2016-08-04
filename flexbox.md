@@ -48,7 +48,9 @@ div {
 <details>
   <summary><strong>These might work...</strong></summary>
 
-  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the element. This can get tedious, however, when there is more than one element in a container.
+  > **Padding**: The simplest approach would be to set equal padding on the top and bottom of the element. We would need to know the exact height of the element and container in order to get this exactly right. This can also get tedious when there is more than one element in a container.
+  >
+  > **Margin**: Similarly, we could add some margin to the element we are trying to center. The same issues remain.
   >
   > **Absolute Positioning**: You could use properties like `top` and `left` to position an element in the center. This, however, removes it from the document flow.
 
@@ -247,7 +249,7 @@ http://bennettfeely.com/flexplorer/
 
 ## The Holy Grail Layout (5 minutes / 1:15)
 
-![holy grail layout](img/holy-grail-layout.gif)
+![holy grail layout](img/holy-grail-layout.png)
 
 This is something you know well, even if you don't recognize the term. It describes a webpage with a header bar, a footer bar, and three columns along the middle: a wide "main" column, a navigation column on the left, and an advertisement, site map, or extra info column along the right.
 
