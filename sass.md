@@ -1,13 +1,17 @@
 # Intro to Sass
 
+<!--10:05 5 minutes-->
+
+<!-- OK, so this week we made HTML easier to write and DRYer with EJS.  It's too bad there's no way to do that with CSS...but wait, there is!  That way is Sass. -->
+
 ## Learning Objectives
 
-- Be able to explain what Sass is and why it's used
-- Use variables to make code more flexible
-- Understand how to use nesting to help DRY up selectors and properties
-- Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
+- **Explain** what Sass is and why it's used
+- **Use** variables to make code more flexible
+- **Understand** how to use nesting to help DRY up selectors and properties
+- **Differentiate** between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
 
-## Framing: What is Sass? (5 minutes / 1:30)
+## Framing: What is Sass?
 
 ![Sass Icon](http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg)
 
@@ -18,13 +22,15 @@
 Sass is a superset of CSS that adds power and elegance to the basic language. You can do all the normal CSS things plus way more!
 - You write a combination of CSS and SassScript, which compiles to proper CSS.
 - It allows you to use variables, nested rules, mixins, inline imports and more, all with a fully CSS-compatible syntax.
-- Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly...
+- Sass helps keep large stylesheets well-organized, and helps get small stylesheets up and running quickly.
 
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
 
-## You Do: Explore Sass Examples (10 min / 1:40)
+<!--10:10 10 minutes -->
 
-Explore these Codepens. When you open them, you'll notice that the CSS column has a header of CSS (scss). This means that you're currently looking at Sass. Compare this to what you see when you click on the drop-down arrow at the top-right of the column and click "View Compiled CSS". Now you're looking at the CSS after it's been compiled from Sass.
+## You Do: Explore Sass Examples
+
+Explore these Codepens. When you open them, you'll notice that the CSS column has a header of `CSS (SCSS)`. This means that you're currently looking at Sass. Compare this to what you see when you click on the drop-down arrow at the top-right of the column and click "View Compiled CSS". Now you're looking at the CSS after it's been compiled from Sass.
 
 Some things to consider...
 * In what ways does Sass look different than Vanilla CSS?
@@ -41,13 +47,13 @@ Some things to consider...
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
-## Break (5 minutes / 1:45)
+<!--10:20 35 minutes -->
 
-## You Do: Teachbacks (35 minutes / 2:20)
+## You Do: Teachbacks
 
-> 20 minutes exercise. 15 minutes presentations.
+<!-- 20 minutes exercise. 15 minutes presentations. -->
 
-For the remainder of the class, you will be divided into group that will researching certain aspects of Sass and teach them back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
+For the remainder of the class, you will be divided into group that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
 ### I. Variables
 
@@ -115,34 +121,16 @@ advantage to using variables it makes it easy to update properties.
 * [Handy Sass Mixins](https://web-design-weekly.com/2013/05/12/handy-sass-mixins/)
 * [The Extend Concept](https://css-tricks.com/the-extend-concept/)
 
-### BONUS - V: Functions
+### V: Functions
 
-If you're group finishes early, look into Sass functions!
+If a group is looking for a challenge, look into Sass functions!
 
 #### Resources
 
 * [Sass Documentation](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 * [Pure Sass Functions](http://thesassway.com/advanced/pure-sass-functions)
 
-# Exercise: Flash (15 minutes)
-
-> If there's time left, give this exercise a shot.
-
-[Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
-
-Use Sass to style the provided elements to recreate the image at bottom of the Codepen. You shouldn't need to modify the HTML at all.
-
-Don't try to implement all the above Sass features at once. Instead, take the following steps...
-* Complete the exercise, making sure to use variables for repeated values and nesting selectors where applicable.
-* Once you're done, identify repeated chunks of code and define them in single selectors. Then apply them throughout your code using `@extend` statements.
-* **BONUS:** Use mixins and/or functions to to generate the font and background colors for each button.
-
-<details>
-  <summary>
-	 **SOLUTION:**
-  </summary>
-  [Only take a peek. No copy-and-pasting.](http://codepen.io/adambray/pen/yegjdj)
-</details>
+<!--10:55 5 minutes -->
 
 ## Compiling to CSS
 
@@ -172,12 +160,14 @@ used it but it's out there and pretty popular.
 
 If you're worried about vendor prefixes there is also [autoprefixer](https://github.com/postcss/autoprefixer). It's not a sass thing but cool regardless and potentially a good alternative to compass if you're only concerned with prefixes.
 
+<!--11:05 5 minutes -->
+
 # Conclusion
 
 - Name 3 benefits of Sass.
 - Describe how variables work in Sass
 - Understand how to use nesting to help DRY up selectors and properties
-- Differentiate between `@extend`, `@import`, `@mixin` & `@include`, and `@function`
+- Describe what `@extend` does
 
 ### Want more?  
 
@@ -185,6 +175,27 @@ If you're worried about vendor prefixes there is also [autoprefixer](https://git
   - From the scotch.io tutoral - [build your own framework](https://scotch.io/tutorials/getting-started-with-sass#function-directives)
 ]
 - Or, check out the follow-up lesson, [Sass Directives](https://github.com/ga-wdi-lessons/sass-directives)
+
+# Exercise: Flash
+
+> If you would like to practice Sass, give this exercise a shot.
+
+[Flash Exercise](http://codepen.io/adambray/pen/bEgMXr)
+
+Use Sass to style the provided elements to recreate the image at bottom of the Codepen. You shouldn't need to modify the HTML at all.
+
+Don't try to implement all the above Sass features at once. Instead, take the following steps...
+* Complete the exercise, making sure to use variables for repeated values and nesting selectors where applicable.
+* Once you're done, identify repeated chunks of code and define them in single selectors. Then apply them throughout your code using `@extend` statements.
+* **BONUS:** Use mixins and/or functions to to generate the font and background colors for each button.
+
+<details>
+  <summary>
+	 **SOLUTION:**
+  </summary>
+  [Only take a peek. No copy-and-pasting.](http://codepen.io/adambray/pen/yegjdj)
+</details>
+
 
 ### References
 
