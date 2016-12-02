@@ -47,13 +47,15 @@ Some things to consider...
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
-<!--11:30 40 minutes -->
+<!--Presentations should have 25 minutes instead of 15, research time is good-->
+
+<!--11:35 40 minutes -->
 
 ## You Do: Teachbacks
 
 <!-- 25 minutes exercise. 15 minutes presentations. -->
 
-For the remainder of the class, you will be divided into group that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
+For the remainder of the class, you will be divided into groups that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
 ### I. Variables
 
