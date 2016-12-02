@@ -1,6 +1,6 @@
 # Intro to Sass
 
-<!--11:15 5 minutes-->
+<!--11:20 5 minutes-->
 
 <!-- OK, so this week we made HTML easier to write and DRYer with EJS.  It's too bad there's no way to do that with CSS...but wait, there is!  That way is Sass. -->
 
@@ -26,7 +26,7 @@ Sass is a superset of CSS that adds power and elegance to the basic language. Yo
 
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
 
-<!--11:20 10 minutes -->
+<!--11:25 10 minutes -->
 
 ## You Do: Explore Sass Examples
 
@@ -47,11 +47,11 @@ Some things to consider...
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
-<!--11:30 45 minutes -->
+<!--11:30 40 minutes -->
 
 ## You Do: Teachbacks
 
-<!-- 25 minutes exercise. 20 minutes presentations. -->
+<!-- 25 minutes exercise. 15 minutes presentations. -->
 
 For the remainder of the class, you will be divided into group that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
