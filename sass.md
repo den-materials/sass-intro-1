@@ -1,6 +1,6 @@
 # Intro to Sass
 
-<!--10:05 5 minutes-->
+<!--11:00 5 minutes-->
 
 <!-- OK, so this week we made HTML easier to write and DRYer with EJS.  It's too bad there's no way to do that with CSS...but wait, there is!  That way is Sass. -->
 
@@ -26,7 +26,7 @@ Sass is a superset of CSS that adds power and elegance to the basic language. Yo
 
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
 
-<!--10:10 10 minutes -->
+<!--11:05 10 minutes -->
 
 ## You Do: Explore Sass Examples
 
@@ -47,11 +47,11 @@ Some things to consider...
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
-<!--10:20 35 minutes -->
+<!--11:15 50 minutes -->
 
 ## You Do: Teachbacks
 
-<!-- 20 minutes exercise. 15 minutes presentations. -->
+<!-- 30 minutes exercise. 20 minutes presentations. -->
 
 For the remainder of the class, you will be divided into group that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
@@ -130,7 +130,7 @@ If a group is looking for a challenge, look into Sass functions!
 * [Sass Documentation](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 * [Pure Sass Functions](http://thesassway.com/advanced/pure-sass-functions)
 
-<!--10:55 5 minutes -->
+<!--12:05 5 minutes -->
 
 ## Compiling to CSS
 
@@ -160,7 +160,7 @@ used it but it's out there and pretty popular.
 
 If you're worried about vendor prefixes there is also [autoprefixer](https://github.com/postcss/autoprefixer). It's not a sass thing but cool regardless and potentially a good alternative to compass if you're only concerned with prefixes.
 
-<!--11:05 5 minutes -->
+<!--12:10 5 minutes -->
 
 # Conclusion
 
