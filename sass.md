@@ -1,5 +1,6 @@
 # Intro to Sass
 
+<!--10:02 WDI3 -->
 <!--11:20 5 minutes-->
 
 <!-- OK, so this week we made HTML easier to write and DRYer with EJS.  It's too bad there's no way to do that with CSS...but wait, there is!  That way is Sass. -->
@@ -26,6 +27,7 @@ Sass is a superset of CSS that adds power and elegance to the basic language. Yo
 
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
 
+<!--10:07 after intro talk in WDI3 -->
 <!--11:25 10 minutes -->
 
 ## You Do: Explore Sass Examples
@@ -46,8 +48,6 @@ Some things to consider...
 - [Space Invader](http://codepen.io/jshawl/pen/cnyrJ)
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
-
-<!--Presentations should have 25 minutes instead of 15, research time is good-->
 
 <!--11:35 50 minutes -->
 
@@ -132,6 +132,9 @@ If a group is looking for a challenge, look into Sass functions!
 * [Sass Documentation](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 * [Pure Sass Functions](http://thesassway.com/advanced/pure-sass-functions)
 
+
+<!--11:03 WDI3 -->
+
 <!--12:15 5 minutes -->
 
 ## Compiling to CSS
@@ -198,6 +201,7 @@ Don't try to implement all the above Sass features at once. Instead, take the fo
   [Only take a peek. No copy-and-pasting.](http://codepen.io/adambray/pen/yegjdj)
 </details>
 
+<!-- 11:13 WDI3 -->
 
 ### References
 
