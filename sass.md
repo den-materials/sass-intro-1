@@ -49,11 +49,11 @@ Some things to consider...
 
 <!--Presentations should have 25 minutes instead of 15, research time is good-->
 
-<!--11:35 40 minutes -->
+<!--11:35 50 minutes -->
 
 ## You Do: Teachbacks
 
-<!-- 25 minutes exercise. 15 minutes presentations. -->
+<!-- 25 minutes exercise. 25 minutes presentations. -->
 
 For the remainder of the class, you will be divided into groups that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
