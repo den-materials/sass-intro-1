@@ -57,7 +57,7 @@ Some things to consider...
 ## You Do: Teachbacks
 
 <!-- 25 minutes exercise. 25 minutes presentations. -->
-<!--WDI4 10:36 start presentations, 10: end presentations -->
+<!--WDI4 10:36 start presentations, 10:56 end presentations -->
 
 
 For the remainder of the class, you will be divided into squads that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
@@ -169,6 +169,7 @@ used it but it's out there and pretty popular.
 
 If you're worried about vendor prefixes there is also [autoprefixer](https://github.com/postcss/autoprefixer). It's not a sass thing but cool regardless and potentially a good alternative to compass if you're only concerned with prefixes.
 
+<!--10:58 WDI4 -->
 <!--12:20 5 minutes -->
 
 # Conclusion
@@ -206,6 +207,7 @@ Don't try to implement all the above Sass features at once. Instead, take the fo
 </details>
 
 <!-- 11:13 WDI3 -->
+<!--11:02 WDI4 -->
 
 ### References
 
