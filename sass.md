@@ -55,7 +55,7 @@ Some things to consider...
 
 <!-- 25 minutes exercise. 25 minutes presentations. -->
 
-For the remainder of the class, you will be divided into groups that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
+For the remainder of the class, you will be divided into squads that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
 ### I. Variables
 
