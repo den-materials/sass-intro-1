@@ -1,5 +1,6 @@
 # Intro to Sass
 
+<!--9:50 WDI4 -->
 <!--10:02 WDI3 -->
 <!--11:20 5 minutes-->
 
@@ -28,6 +29,7 @@ Sass is a superset of CSS that adds power and elegance to the basic language. Yo
 > Sass syntax originated from [Haml](http://haml.info/). Some developers didn't like a syntax that was so foreign from CSS and so the developers that created Sass introduced SCSS which is 'the new main syntax' for Sass.
 
 <!--10:07 after intro talk in WDI3 -->
+<!--9:58 after intro talk WDI4 -->
 <!--11:25 10 minutes -->
 
 ## You Do: Explore Sass Examples
@@ -49,11 +51,14 @@ Some things to consider...
 
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
+<!-- WDI4 10:05, 10:10 turning over to devs to research-->
 <!--11:35 50 minutes -->
 
 ## You Do: Teachbacks
 
 <!-- 25 minutes exercise. 25 minutes presentations. -->
+<!--WDI4 10:36 start presentations, 10: end presentations -->
+
 
 For the remainder of the class, you will be divided into squads that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
@@ -69,7 +74,7 @@ For the remainder of the class, you will be divided into squads that will resear
 
 Sass allows us to use variables which are defined with `$`. Variables can store
 strings, numbers, colors, arrays, and objects. Variable names should relate to
-their usage and not there value e.g. ✅`$border-color` vs. ❌`$red`. One big
+their usage and not their value e.g. ✅`$border-color` vs. ❌`$red`. One big
 advantage to using variables it makes it easy to update properties.
 
 #### Resources
@@ -142,10 +147,9 @@ If a group is looking for a challenge, look into Sass functions!
 Webpages don't know what to do with raw Sass/SCSS, these files need to be compiled to regular CSS to be used.
 
 This can be done a number of different ways...
-- Installing the sass gem `gem install sass` and compile with `$ sassc <whatever-input-filename.scss> <whatever-output-filename.css>`
-  - There is also a `--watch` flag that allows you to watch a file and auto-compile every time you save it.
 - Using a GUI program/plugin like `sass-autocompile`
-  - `apm install sass-autocompile`
+  - For Atom: `apm install sass-autocompile`
+  - For Sublime: [SassBuilder](http://www.hongkiat.com/blog/sublime-text-compiling-sass/)
 - Letting a build tool like Grunt/Gulp/Webpack/npm-scripts handle the compilation with an additional package/plugin.
 
 ------
