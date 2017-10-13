@@ -3,6 +3,7 @@
 <!--9:50 WDI4 -->
 <!--10:02 WDI3 -->
 <!--11:20 5 minutes-->
+<!--WDI5 10:11 -->
 
 <!-- OK, so this week we made HTML easier to write and DRYer with EJS.  It's too bad there's no way to do that with CSS...but wait, there is!  That way is Sass. -->
 
@@ -52,13 +53,14 @@ Some things to consider...
 > We don't expect you to understand exactly what the Sass is doing in these examples. Just think about it on a higher level.
 
 <!-- WDI4 10:05, 10:10 turning over to devs to research-->
+<!--WDI5 10:23, 10:27 turning over to devs  -->
 <!--11:35 50 minutes -->
 
 ## You Do: Teachbacks
 
 <!-- 25 minutes exercise. 25 minutes presentations. -->
 <!--WDI4 10:36 start presentations, 10:56 end presentations -->
-
+<!--WDI5 10:54 start presentations, 11:07 end presentations -->
 
 For the remainder of the class, you will be divided into squads that will research a certain aspect of Sass and teach it back to the class. Each group must create and demo a Codepen that shows their designed topic in action.
 
